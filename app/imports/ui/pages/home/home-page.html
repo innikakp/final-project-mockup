@@ -1,0 +1,81 @@
+<template name="Home_Page">
+  {{#if Template.subscriptionsReady}}
+    <div style="margin-top: 10px" class="ui container">
+
+      <div class="ui two column grid">
+        <div class="column">
+          <div style="background-color: #99ff9a" class="ui segment">
+            <h2 style="color: ghostwhite;">UHM Food Vendors</h2>
+            <hr/>
+            <h3>DA SPOT</h3>
+            <ul>
+              <li>Eggplant Parmesan</li>
+            </ul>
+            <h3>DOMINO'S EXPRESS</h3>
+            <ul>
+              <li>Pan Pizza</li>
+            </ul>
+            <h3>DUNKIN' DONUTS</h3>
+            <ul>
+              <li>Glazed Donut</li>
+            </ul>
+            <h3>INDIA CAFE</h3>
+            <ul>
+              <li>Egg Masala</li>
+              <li>Lamb Masala (mild) or Lamb Sambal (spicy)</li>
+            </ul>
+            <h3>PANDA EXPRESS</h3>
+            <ul>
+              <li>Egg Masala</li>
+              <li>Lamb Masala (mild) or Lamb Sambal (spicy)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <div style="background-color: #78cbff;" class="ui segment">
+            <h2 style="color: ghostwhite;">Manoa Dining Services</h2>
+            <hr/>
+            <h3>STARBUCKS</h3>
+            <ul>
+              <li>Black Coffee</li>
+            </ul>
+            <h3>CAMPUS CENTER FOOD COURT</h3>
+            <h4>Da Grill</h4>
+            <ul>
+              <li>Classic Burger</li>
+            </ul>
+            <h4>Salad</h4>
+            <ul>
+              <li>Cobb Salad</li>
+              <li>Chicken Caesar Salad</li>
+              <li>Mediterranean Salad</li>
+            </ul>
+            <h4>Aja</h4>
+            <ul>
+              <li>Plate lunch</li>
+            </ul>
+            <h3>BA-LE</h3>
+            <h4>Sandwiches</h4>
+            <ul>
+              <li>Pastrami</li>
+              <li>Turkey</li>
+              <li>Lemongrass Chicken</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <form class="ui equal width form filter-data-form">
+        <div class="field">
+          {{> Select_Form_Control label="Interests" options=interests multiple=true }}
+        </div>
+        <button class="ui teal button" type="submit">Home</button>
+      </form>
+
+      {{> Home_Page_Directory profiles=profiles }}
+
+    </div>
+  {{/if}}
+</template>

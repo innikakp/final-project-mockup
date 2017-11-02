@@ -68,6 +68,22 @@ userRoutes.route('/filter', {
   },
 });
 
+export const homePageRouteName = 'Home_Page';
+userRoutes.route('/home', {
+  name: homePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: homePageRouteName });
+  },
+});
+
+export const topPicksPageRouteName = 'Top_Picks_Page';
+userRoutes.route('/toppicks', {
+  name: topPicksPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: topPicksPageRouteName });
+  },
+});
+
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
   action() {

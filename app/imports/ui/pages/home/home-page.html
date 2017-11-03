@@ -2,79 +2,363 @@
   {{#if Template.subscriptionsReady}}
     <div style="margin-top: 10px" class="ui container">
 
+      <h1 style="color: crimson; text-align: center;">Today's Specials!</h1>
+      <div class="ui segments">
+        <div class="ui segment">
+          <p>Fish and Chips</p>
+        </div>
+        <div class="ui blue segment">
+          <p>Teriyaki Steak</p>
+        </div>
+        <div class="ui green segment">
+          <p>Shoyu Pork</p>
+        </div>
+        <div class="ui yellow segment">
+          <p>Roast Turkey with Dressing</p>
+        </div>
+        <div class="ui orange segment">
+          <p>Broiled Chicken breast</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 30px" class="ui container">
+      <h1 style="color: cornflowerblue; text-align: center; padding-bottom: 5px">Food Menus</h1>
       <div class="ui two column grid">
         <div class="column">
-          <div style="background-color: #99ff9a" class="ui segment">
-            <h2 style="color: ghostwhite;">UHM Food Vendors</h2>
+          <div class="ui segment">
+            <h2 style="color: darkgreen;">UHM Food Vendors</h2>
             <hr/>
-            <h3>DA SPOT</h3>
-            <ul>
-              <li>Eggplant Parmesan</li>
-            </ul>
-            <h3>DOMINO'S EXPRESS</h3>
-            <ul>
-              <li>Pan Pizza</li>
-            </ul>
-            <h3>DUNKIN' DONUTS</h3>
-            <ul>
-              <li>Glazed Donut</li>
-            </ul>
-            <h3>INDIA CAFE</h3>
-            <ul>
-              <li>Egg Masala</li>
-              <li>Lamb Masala (mild) or Lamb Sambal (spicy)</li>
-            </ul>
-            <h3>PANDA EXPRESS</h3>
-            <ul>
-              <li>Egg Masala</li>
-              <li>Lamb Masala (mild) or Lamb Sambal (spicy)</li>
-            </ul>
+
+            <h3>Food Trucks In Courtyard:</h3>
+            <table class="ui red unstackable celled table">
+              <thead>
+              <tr>
+                <th>DA SPOT</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Roasted Vegetable Medley</td>
+              </tr>
+              <tr>
+                <td>Coconut Garmasala Vege Curry</td>
+              </tr>
+              <tr>
+                <td>Thai Panang Vege Curry</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <h3>Vendors In Paradise Palms:</h3>
+            <table class="ui blue unstackable celled table">
+              <thead>
+              <tr>
+                <th>DOMINO'S EXPRESS</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Personal Pizza</td>
+              </tr>
+              <tr>
+                <td>Slice of Pizza</td>
+              </tr>
+              <tr>
+                <td>16" Cheese Made to Order</td>
+              </tr>
+              <tr>
+                <td>Philly Cheese Steak</td>
+              </tr>
+              <tr>
+                <td>Chicken Bacon Ranch</td>
+              </tr>
+              <tr>
+                <td>Buffalo Wings</td>
+              </tr>
+
+              </tbody>
+            </table>
+
+            <table class="ui pink unstackable celled table">
+              <thead>
+              <tr>
+                <th>DUNKIN' DONUTS</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Donuts</td>
+              </tr>
+              <tr>
+                <td>Hot Coffee</td>
+              </tr>
+              <tr>
+                <td>Iced Coffee</td>
+              </tr>
+              <tr>
+                <td>Blended Coffee</td>
+              </tr>
+              <tr>
+                <td>Breakfast</td>
+              </tr>
+              <tr>
+                <td>Lunch Sandwiches</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <table class="ui orange unstackable celled table">
+              <thead>
+              <tr>
+                <th>INDIA CAFE</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Egg Masala</td>
+              </tr>
+              <tr>
+                <td>Lamb Masala (mild) or Lamb Sambal (spicy)</td>
+              </tr>
+              <tr>
+                <td>Fish Curry or Fish Sambal (spicy)</td>
+              </tr>
+              <tr>
+                <td>Chicken Curry (med spice) or Chicken Korma (mild) or Spicy Chicken Sambal</td>
+              </tr>
+              <tr>
+                <td>Spicy Shrimp Sambal or Shrimp Curry</td>
+              </tr>
+              <tr>
+                <td>Vegetable Sambal</td>
+              </tr>
+              <tr>
+                <td>Tofu Sambal</td>
+              </tr>
+              <tr>
+                <td>Spinach Tofu Korma</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <table class="ui red unstackable celled table">
+              <thead>
+              <tr>
+                <th>PANDA EXPRESS</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Orange Chicken</td>
+              </tr>
+              <tr>
+                <td>String Bean Chicken Breast</td>
+              </tr>
+              <tr>
+                <td>Beijing Beef</td>
+              </tr>
+              <tr>
+                <td>Broccoli Beef</td>
+              </tr>
+              <tr>
+                <td>Kung Pao Chicken</td>
+              </tr>
+              <tr>
+                <td>SweetFire Chicken Breast</td>
+              </tr>
+              <tr>
+                <td>Mushroom Chicken</td>
+              </tr>
+              <tr>
+                <td>Black Pepper Chicken</td>
+              </tr>
+              <tr>
+                <td>Mandarin Chicken</td>
+              </tr>
+              <tr>
+                <td>Honey Walnut Shrimp</td>
+              </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
         <div class="column">
-          <div style="background-color: #78cbff;" class="ui segment">
-            <h2 style="color: ghostwhite;">Manoa Dining Services</h2>
+          <div class="ui segment">
+            <h2 style="color: darkgreen;">Manoa Dining Services</h2>
             <hr/>
-            <h3>STARBUCKS</h3>
-            <ul>
-              <li>Black Coffee</li>
-            </ul>
-            <h3>CAMPUS CENTER FOOD COURT</h3>
-            <h4>Da Grill</h4>
-            <ul>
-              <li>Classic Burger</li>
-            </ul>
-            <h4>Salad</h4>
-            <ul>
-              <li>Cobb Salad</li>
-              <li>Chicken Caesar Salad</li>
-              <li>Mediterranean Salad</li>
-            </ul>
-            <h4>Aja</h4>
-            <ul>
-              <li>Plate lunch</li>
-            </ul>
-            <h3>BA-LE</h3>
-            <h4>Sandwiches</h4>
-            <ul>
-              <li>Pastrami</li>
-              <li>Turkey</li>
-              <li>Lemongrass Chicken</li>
-            </ul>
+
+            <h3>Vendors In Campus Center:</h3>
+            <table class="ui green unstackable celled table">
+              <thead>
+              <tr>
+                <th>STARBUCKS</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Iced Coffee</td>
+              </tr>
+              <tr>
+                <td>Pink Drink</td>
+              </tr>
+              <tr>
+                <td>Hot Chocolate</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <table class="ui orange unstackable celled table">
+              <thead>
+              <tr>
+                <th>JAMBA JUICE</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Strawberry Surf Rider</td>
+              </tr>
+              <tr>
+                <td>Caribbean Passion</td>
+              </tr>
+              <tr>
+                <td>Strawberry Whirl</td>
+              </tr>
+              <tr>
+                <td>Aloha Pineapple</td>
+              </tr>
+              <tr>
+                <td>Mango-A-Go-Go</td>
+              </tr>
+              <tr>
+                <td>Peach Pleasure</td>
+              </tr>
+              <tr>
+                <td>Strawberry Wild</td>
+              </tr>
+              <tr>
+                <td>Chili Mango</td>
+              </tr>
+              <tr>
+                <td>Banana Berry</td>
+              </tr>
+              <tr>
+                <td>Acai Bowl</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <h3>Vendors in Campus Center Food Court:</h3>
+            <table class="ui yellow unstackable celled table">
+              <thead>
+              <tr>
+                <th>DA GRILL</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Classic Burger</td>
+              </tr>
+              <tr>
+                <td>Grilled Cheese</td>
+              </tr>
+              <tr>
+                <td>French Fries</td>
+              </tr>
+              <tr>
+                <td>Curly Fries</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <table class="ui teal unstackable celled table">
+              <thead>
+              <tr>
+                <th>SALAD BAR</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Cobb Salad</td>
+              </tr>
+              <tr>
+                <td>Chicken Caesar Salad</td>
+              </tr>
+              <tr>
+                <td>Mediterranean Salad</td>
+              </tr>
+              <tr>
+                <td>Mesquite Salad</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <table class="ui brown unstackable celled table">
+              <thead>
+              <tr>
+                <th>AJA</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Daily Special Plate Lunch</td>
+              </tr>
+              <tr>
+                <td>Musubi</td>
+              </tr>
+              <tr>
+                <td>Salmon</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <table class="ui olive unstackable celled table">
+              <thead>
+              <tr>
+                <th>STIR FRESH</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Ahi Bowl</td>
+              </tr>
+              <tr>
+                <td>Curry Bowl</td>
+              </tr>
+              <tr>
+              </tr>
+
+              </tbody>
+            </table>
+
+            <h3>Vendors Near Sinclair Library:</h3>
+            <table class="ui blue unstackable celled table">
+              <thead>
+              <tr>
+                <th>BA-LE</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Pastrami</td>
+              </tr>
+              <tr>
+                <td>Turkey</td>
+              </tr>
+              <tr>
+                <td>Lemongrass Chicken</td>
+              </tr>
+              <tr>
+                <td>Chicken Pesto</td>
+              </tr>
+
+              </tbody>
+            </table>
+
           </div>
         </div>
-
       </div>
-
-      <form class="ui equal width form filter-data-form">
-        <div class="field">
-          {{> Select_Form_Control label="Interests" options=interests multiple=true }}
-        </div>
-        <button class="ui teal button" type="submit">Home</button>
-      </form>
-
-      {{> Home_Page_Directory profiles=profiles }}
 
     </div>
   {{/if}}
